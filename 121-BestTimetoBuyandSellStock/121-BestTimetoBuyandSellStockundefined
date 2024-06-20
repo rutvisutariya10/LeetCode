@@ -1,0 +1,8 @@
+            else:
+                currProf = prices[right] - prices[left]
+                if currProf > maxProfit:
+                    maxProfit = currProf
+            right += 1
+        return maxProfit
+            
+[7,1,5,3,6,4]
