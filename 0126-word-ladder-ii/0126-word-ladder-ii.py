@@ -3,14 +3,29 @@ from typing import List
 
 class Solution:
     def findLadders(self, beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:
+        wordList.append(beginWord)
         wordSet = set(wordList)
         if endWord not in wordSet:
             return []
 
         # Adjacency list to store the graph
-        adj = defaultdict(list)
+        adj = {}
+        neigh = collections.defaultdict(list)
+        for word in wordSet:
+            for j in range(len(word)):
+                pattern = word[:j]+"*"+word[j+1:]
+                neigh[pattern].append(word)
+        for word in wordSet:
+            adj[word] = []
+            for j in range(len(word)):
+                pattern = word[:j] + "*" + word[j+1:]
+                for neighbour in neigh[pattern]:
+                    if neighbour != word:
+                        adj[word].append(neighbour)
+            
         visited = set()
         queue = deque([beginWord])
+        backtrack_dict = collections.defaultdict(list)
         visited.add(beginWord)
         found = False
 
@@ -19,30 +34,23 @@ class Solution:
             current_level_visited = set()
             for _ in range(level_size):
                 currentWord = queue.popleft()
-                tempWord = currentWord
-
-                for j in range(len(currentWord)):
-                    originalChar = currentWord[j]
-                    for c in 'abcdefghijklmnopqrstuvwxyz':
-                        if c == originalChar:
-                            continue  # Skip if character is the same as original
-                        currentWord = currentWord[:j] + c + currentWord[j+1:]
-                        if currentWord in wordSet:
-                            if currentWord == endWord:
-                                found = True
-                            if currentWord not in visited:
-                                if currentWord not in current_level_visited:
-                                    queue.append(currentWord)
-                                    current_level_visited.add(currentWord)
-                                adj[currentWord].append(tempWord)
-                    currentWord = tempWord  # Restore original character
-
+                
+                for word in adj[currentWord]:
+                    if word == endWord:
+                        found = True
+                    if word not in visited:
+                        if word not in current_level_visited:
+                            queue.append(word)
+                            current_level_visited.add(word)
+                        if word != currentWord:
+                            backtrack_dict[word].append(currentWord)
+                            
             visited.update(current_level_visited)
 
         res = []
         if found:
             path = [endWord]
-            self.backtrack(endWord, beginWord, adj, path, res)
+            self.backtrack(endWord, beginWord, backtrack_dict, path, res)
         return res
 
     def backtrack(self, currentWord: str, beginWord: str, adj: dict, path: List[str], res: List[List[str]]):
