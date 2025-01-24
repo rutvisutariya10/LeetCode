@@ -1,17 +1,16 @@
-            return True
-        answer = 0
-        while dist:
-                parent[pa] = pb
-                rank[pb] += rank[pa]
-                rank[pa] += rank[pb]
-            else:
-            if rank[pa] >= rank[pb]:
-                parent[pb] = pa
-            if pa == pb:
-                return False
-        def union(a,b):
-            pa, pb = find(a), find(b)
-            return parent[(x,y)]
-            v, ai, aj, bi, bj = heapq.heappop(dist)
-            a = (ai, aj)
-            b = (bi, bj)
+        def find(tupl):
+    
+            rank[(x,y)] = 0
+            parent[(x,y)] = (x,y)
+        for x,y in points:
+        rank = {}
+        parent = {}
+                heapq.heappush(dist,[val,xi,yi,xj,yj])
+                val = abs(xi-xj) + abs(yi-yj)
+                xi, yi = points[i][0], points[i][1]
+                xj, yj = points[j][0], points[j][1]
+            for j in range(i+1,len(points)):
+        for i in range(len(points)):
+        dist = []
+    def minCostConnectPoints(self, points: List[List[int]]) -> int:
+class Solution:
