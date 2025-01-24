@@ -14,4 +14,4 @@
                 heapq.heappush(pq,nei)
         return answer
 
-        print(g)
+
