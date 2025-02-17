@@ -1,17 +1,13 @@
-                    dfs(idx+1,st+tile,dic)
-                    dic[tile] += 1
-            return
-
-            
-            
-
-
-        dfs(-1,"",count)
-        return len(answer)
-
-                    dic[tile] -= 1
                 if dic[tile] > 0:
-            for tile in tiles:
-            dfs(idx+1,st,dic)
-                return
-            if idx == L:
+                    # Choose the tile, update its count
+                    dic[tile] -= 1
+                    # Recurse to form new strings by adding this tile
+                    dfs(st + tile, dic)
+                    # Backtrack: restore the count of the tile
+                    dic[tile] += 1
+
+        # Start DFS with an empty string and the tile counts
+        dfs("", count)
+        
+        # Return the number of unique combinations
+        return len(answer)        
