@@ -1,16 +1,17 @@
-            head = ListNode()
-            prev = head
-            while list1 and list2:
-                if list1.val <= list2.val:
-                    prev.next = list1
-                    list1 = list1.next
-                else:
-                    prev.next = list2
-                    list2 = list2.next
-            if list1:
-                prev.next = list1
-            if list2:
-                prev.next = list2
-            return head.next
-        list1 = lists[0]
-                prev = prev.next
+            for i in range(0, len(lists), 2):
+            temp = []
+        while len(lists) > 1:
+        
+            return None
+        if not lists or len(lists) == 0:
+        # return list1
+
+        #     print(list1)
+        #     list1 = merge(list1,lists[i])
+        #     return head.next
+        # list1 = lists[0]
+        # for i in range(1,len(lists)):
+        #         prev.next = list2
+        #     if list2:
+        #         prev.next = list1
+        #     if list1:
