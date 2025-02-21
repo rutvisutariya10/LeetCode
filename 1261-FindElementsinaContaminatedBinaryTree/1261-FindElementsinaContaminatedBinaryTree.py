@@ -1,19 +1,19 @@
-        self.makeSet(root)
-
-    def makeSet(self,root):
         if not root:
             return 
         self.vals.add(root.val)
         if root.left:
             root.left.val =   (2*root.val) + 1
             self.makeSet(root.left)
-        if root.right:
-            root.right.val = (2*root.val) + 2    
-            self.makeSet(root.right)    
+    def makeSet(self,root):
 
-    def find(self, target: int) -> bool:
-        if target in self.vals:
-            return True
-        return False
-        
+        self.makeSet(root)
+        self.vals = set()
+        self.tree = root
+        root.val = 0 if root else None
 
+    def __init__(self, root: Optional[TreeNode]):
+#         self.right = right
+class FindElements:
+#         self.left = left
+#         self.val = val
+#     def __init__(self, val=0, left=None, right=None):
