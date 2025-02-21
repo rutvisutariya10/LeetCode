@@ -3,9 +3,7 @@
 
         self.vals.add(currVal)
     def find(self, target: int) -> bool:
-        if target in self.vals:
-            return True
-        return False
+        return target in self.vals
         self.makeSet(root.right, (2*currVal) + 2)   
         if not root:
     def makeSet(self,root,currVal):
@@ -18,3 +16,5 @@
 
 
 # Your FindElements object will be instantiated and called as such:
+# obj = FindElements(root)
+# param_1 = obj.find(target)
