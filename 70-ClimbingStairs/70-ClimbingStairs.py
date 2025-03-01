@@ -4,8 +4,8 @@
         S(i) = S(i-1)
         Base = 
         '''
-        prev = 1
-        before_that = 2
+        prev = 2
+        before_that = 1
         answer = 0
         for i in range(3,n+1):
             answer = prev + before_that
