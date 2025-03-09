@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0213-house-robber-ii](https://github.com/rutvisutariya10/LeetCode/tree/master/0213-house-robber-ii) |
 | [0747-min-cost-climbing-stairs](https://github.com/rutvisutariya10/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [3227-find-missing-and-repeated-values](https://github.com/rutvisutariya10/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
+| [3483-alternating-groups-ii](https://github.com/rutvisutariya10/LeetCode/tree/master/3483-alternating-groups-ii) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -43,4 +44,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/rutvisutariya10/LeetCode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
+| [3483-alternating-groups-ii](https://github.com/rutvisutariya10/LeetCode/tree/master/3483-alternating-groups-ii) |
 <!---LeetCode Topics End-->
