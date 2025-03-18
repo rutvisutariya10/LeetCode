@@ -19,6 +19,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0747-min-cost-climbing-stairs](https://github.com/rutvisutariya10/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0792-binary-search](https://github.com/rutvisutariya10/LeetCode/tree/master/0792-binary-search) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/rutvisutariya10/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
+| [2478-longest-nice-subarray](https://github.com/rutvisutariya10/LeetCode/tree/master/2478-longest-nice-subarray) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/rutvisutariya10/LeetCode/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [3227-find-missing-and-repeated-values](https://github.com/rutvisutariya10/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
 | [3483-alternating-groups-ii](https://github.com/rutvisutariya10/LeetCode/tree/master/3483-alternating-groups-ii) |
@@ -55,6 +56,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/rutvisutariya10/LeetCode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/rutvisutariya10/LeetCode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
+| [2478-longest-nice-subarray](https://github.com/rutvisutariya10/LeetCode/tree/master/2478-longest-nice-subarray) |
 | [3483-alternating-groups-ii](https://github.com/rutvisutariya10/LeetCode/tree/master/3483-alternating-groups-ii) |
 | [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/rutvisutariya10/LeetCode/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
 ## Binary Search
@@ -73,4 +75,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3643-zero-array-transformation-ii](https://github.com/rutvisutariya10/LeetCode/tree/master/3643-zero-array-transformation-ii) |
+## Bit Manipulation
+|  |
+| ------- |
+| [2478-longest-nice-subarray](https://github.com/rutvisutariya10/LeetCode/tree/master/2478-longest-nice-subarray) |
 <!---LeetCode Topics End-->
