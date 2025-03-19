@@ -4,8 +4,9 @@ class Solution:
         count = 0
         for i in range(N-2):
             if nums[i] == 0:
-                for j in range(i,i+3):
-                    nums[j] = 1 - nums[j]
+                nums[i] ^= 1
+                nums[i+1] ^= 1
+                nums[i+2] ^= 1
                 count += 1
         if sum(nums) == N:
             return count
